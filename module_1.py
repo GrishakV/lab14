@@ -221,6 +221,7 @@ if __name__ == '__main__':
 
             else:
                 raise UnknownCommandError(command)
+
         except Exception as exc:
             logging.error(f"Ошибка: {exc}")
             print(exc, file=sys.stderr)
