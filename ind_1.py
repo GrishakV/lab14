@@ -111,7 +111,7 @@ class People:
         result = []
         count = 0
         for person in self.people:
-            if period in person.birthday:
+            if period == person.birthday[1]:
                 count += 1
                 result.append(person)
         return result
